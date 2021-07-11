@@ -1,0 +1,109 @@
+/*
+	THEME NAME:project javaScript;
+	DATE: JULY 2021;
+	DISCRIPTION: LEARN JavaScriipt;
+	VERSION: 1.0;
+	AUTHOR: MOUADH LAABIDI,Rahma Ben Hssan;
+*/
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    
+}
+#title{
+    grid-column: 2;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #89b055;
+    z-index: -1;
+}
+
+.body {
+	color: #000305;
+	font-size: 90%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+section{
+    display:flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.beginingImage{
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.beginingImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.beginingImage::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.buttonStart{
+    display: inline-block;
+    border-radius: 12px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #89b055; /* Green */
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transform: translate(0%,-300%);
+  margin-right: 100px;
+  z-index: 3;
+}
+.buttonStart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  } 
+  .buttonStart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  } 
+  .buttonStart:hover span {
+    padding-left: 25px;
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
