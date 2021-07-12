@@ -19,6 +19,9 @@ nav{
 }
 #title{
     grid-column: 2;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 .slider{
@@ -107,3 +110,18 @@ section{
     right: 0;
   }
 
+footer{
+  background-color: #759d75;
+	width: 100%;
+	height: 80px;
+  position: absolute;
+  bottom: 0%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 20px;
+}
+.aboutUs{
+  grid-column: 4;
+  font-size: 20px;
+  margin-top: 10px;
+}
